@@ -4,9 +4,10 @@ This is an animation generated during my AI training experiment.
 
 🧠 **Tech used:** Grok  
 📅 **Date:** October 2025  
-🎞 **File:** Girl_ warrior.jpeg](./Girl_warrior.jpeg)
+🎞 **File:** Girl_warrior.jpeg](./Girl_warrior.jpeg)
 
-![Preview](./Girl_warrior.jpeg)
+![Preview](./Girl_warrior.jpg)
+![Preview](./Lucid_Origin_create_a_picture_of_A_Muslim_warrior_princess_in__0.jpeg)
 
 🧠 **Tech used:** Grok  
 📅 **Date:** October 2025  
