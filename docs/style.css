@@ -96,13 +96,13 @@ About
 }
 
 /*-------------------------------------------
-Bicycle
+project
 -------------------------------------------*/
-#peoject ul {
+#project ul {
   display: flex;
   justify-content: space-between;
 }
-#bicycle li {
+#project li {
   width: 32%;
 }
 
@@ -140,12 +140,13 @@ SP
   /*-------------------------------------------
   Bicycle
   -------------------------------------------*/
-  #peoject ul {
+  #project ul {
     flex-direction: column;
   }
-  #peoject li {
+  #project li {
     width: 100%;
     margin-bottom: 30px;
   }
 }
+
 
