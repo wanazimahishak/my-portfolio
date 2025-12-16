@@ -98,7 +98,7 @@ About
 /*-------------------------------------------
 Bicycle
 -------------------------------------------*/
-#bicycle ul {
+#peoject ul {
   display: flex;
   justify-content: space-between;
 }
@@ -140,11 +140,12 @@ SP
   /*-------------------------------------------
   Bicycle
   -------------------------------------------*/
-  #bicycle ul {
+  #peoject ul {
     flex-direction: column;
   }
-  #bicycle li {
+  #peoject li {
     width: 100%;
     margin-bottom: 30px;
   }
 }
+
