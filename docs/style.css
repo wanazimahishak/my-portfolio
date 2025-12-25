@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  max-width: auto;
 }
 li {
   list-style: none;
@@ -148,5 +148,6 @@ SP
     margin-bottom: 30px;
   }
 }
+
 
 
