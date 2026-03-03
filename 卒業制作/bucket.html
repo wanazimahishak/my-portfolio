@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+<meta charset="UTF-8">
+<title>趣味</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>🪣 やりたいことリスト ❣ </h1>
+	</header>
+
+	<nav>
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li><a href="food.html">好きな食べ物</a></li>
+				<li><a href="event.html">イベント参加</a></li>
+				<li><a href="travel.html">旅行</a></li>
+				<li><a href="bucket.html">やりたいこと</a></li>
+			</ul>
+	</nav>
+<div class ="container">
+	<main>
+	
+	<!-- decorative divider -->
+    <div class="divider">
+       <img src="images/Others/divider.jpg" alt="divider" class="divider">
+    </div>
+
+	<p class="main-desc"> ワクワクする夢リスト。
+		<br>夢、目標、やりたいこと。一緒にチェックしていこう！。</p>
+
+	 <div class="divider">
+       <img src="images/Others/divider.jpg" alt="divider" class="divider">
+    </div>	
+		
+
+		<div class="gallery-section">
+			<h2>🌸 2026 Bucket Lists</h2>
+		</div>		
+
+		<div class ="intro-card ">
+			<div class="bucket-item">
+  				<input type="checkbox" id="cb1" onchange="toggle(this)"/>
+ 				<label for="cb1">🏔️ スイスの田舎を訪れる</label>
+			</div>
+			<div class="bucket-item">
+				<input type="checkbox" id="cb2" onchange="toggle(this)"/>
+				<label for="cb2">🌌 アイスランドでオーロラを見る</label>
+			</div>
+			<div class="bucket-item">
+				<input type="checkbox" id="cb3" onchange="toggle(this)"/>
+				<label for="cb3">🇯🇵 日本語を学ぶ</label>
+			</div>
+			<div class="bucket-item">
+				<input type="checkbox" id="cb4" onchange="toggle(this)" />
+				<label for="cb4">📜 JLPT N1に合格する</label>
+			</div>
+			<div class="bucket-item">
+				<input type="checkbox" id="cb5" onchange="toggle(this)" />
+				<label for="cb5">🎵 三味線を習う</label>
+			</div>
+			<div class="bucket-item">
+				<input type="checkbox" id="cb6" onchange="toggle(this)"/>
+				<label for="cb6">🎭 三味線で初舞台に立つ</label>
+			</div>
+			<div class="bucket-item" >
+				<input type="checkbox" id="cb7" onchange="toggle(this)" />
+				<label for="cb7">🕌 母とウムラ・ハッジに行く</label>
+			</div>
+			<div class="bucket-item" >
+				<input type="checkbox" id="cb8" onchange="toggle(this)"/>
+				<label for="cb8">🌅 40歳でリタイアする</label>
+			</div>
+			<div class="bucket-item" >
+				<input type="checkbox" id="cb9" onchange="toggle(this)" />
+				<label for="cb9">🏡 45歳で理想の家を買う</label>
+			</div>	
+		</div>		
+			
+	</main>	
+
+	<footer>
+		<p>&copy; 2026 ワンアジマ. All rights reserved. </p>
+	</footer>
+
+	<script>
+		function toggle(checkbox) {
+			checkbox.parentElement.classList.toggle('done');
+
+			// Save this specific checkbox state
+    		localStorage.setItem(checkbox.id, checkbox.checked);
+		}
+
+		 // Load all saved states on page load
+		function loadStates() {
+			const checkboxes = document.querySelectorAll('.bucket-item input[type="checkbox"]');
+			
+			checkboxes.forEach(checkbox => {
+			// Get saved state from localStorage
+			const isChecked = localStorage.getItem(checkbox.id) === 'true';
+			
+			if (isChecked) {
+				checkbox.checked = true;
+				checkbox.parentElement.classList.add('done');
+			}
+			});
+		 }
+
+		// Run when page loads
+		window.addEventListener('DOMContentLoaded', loadStates);
+	</script>
+
+</body>
+</html>

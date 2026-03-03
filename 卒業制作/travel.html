@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+	<meta charset="UTF-8">
+	<title>旅行</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>✈️ 旅行日記 ❣ </h1>	
+	</header>
+
+	<nav>
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li><a href="food.html">好きな食べ物</a></li>
+				<li><a href="event.html">イベント参加</a></li>
+				<li><a href="travel.html">旅行</a></li>
+				<li><a href="bucket.html">やりたいこと</a></li>
+			</ul>
+	</nav>
+
+<div class ="container travel-container">
+
+	<main>
+
+		<!-- decorative divider -->
+		<div class="divider">
+		<img src="images/Others/divider.jpg" alt="divider" class="divider">
+		</div>
+			
+			<p class="main-desc"> 旅行は好きですか？
+			<br>私は旅行が大好きです。でも、行けるのは年に一度くらい。
+			<br>家族や友人と一緒に過ごす時間は、何よりも大切で幸せなひとときです。
+			<br>ここでは、これまでの旅で出会った忘れられない思い出をご紹介します。
+			</p>
+
+		<div class="divider">
+			<img src="images/Others/divider.jpg" alt="divider" class="divider">
+		</div>
+
+		<section class="travel-section" >	
+
+			<!-- 2024 -->
+			<div class="year-section active">
+				<div class="year-header" onclick="toggleYear(this)">
+					<h2>家族 <span class="trip-count">4 trips</span></h2>
+					<span class="arrow">▼</span>
+				</div>
+
+				<div class="trips-container">				
+					<div class="trip-card">
+						<div class="trip-header" onclick="toggleTrip(this)">
+							<div class="trip-title">
+								<h3>🗼 Cameron Highland•マレーシア</h3>
+								<span class="trip-date">2019年12月 • 7日間</span>
+							</div>
+							<span class="trip-arrow">▼</span>
+						</div>
+						<div class="trip-content">
+							<div class="trip-details">							
+								<div class="photo-gallery">
+									<img src="images/family/fam8.jpg" alt="family8">
+									<img src="images/family/fam7.jpg" alt="family7">
+									<img src="images/family/fam6.jpg" alt="family6">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="trip-card">
+					<div class="trip-header" onclick="toggleTrip(this)">
+						<div class="trip-title">
+							<h3>🏔️ 福岡 • Fukuoka</h3>
+							<span class="trip-date">2019年12月 • 7日間</span>
+						</div>
+						<span class="trip-arrow">▼</span>
+					</div>
+					<div class="trip-content">
+							<div class="trip-details">
+								<div class="photo-gallery">
+									<img src="images/family/fuktrip.jpg" alt="trip1">
+									<img src="images/family/fuktrip1.jpg" alt="trip1">
+									<img src="images/family/fuktrip7.jpg" alt="trip7">
+									<img src="images/family/fuktrip5.jpg" alt="trip5">
+									<img src="images/family/fuktrip4.jpg" alt="trip4">
+									<img src="images/family/fuktrip3.jpg" alt="trip3">
+								</div> 
+							</div>
+					</div>
+
+					<div class="trip-card">
+					<div class="trip-header" onclick="toggleTrip(this)">
+						<div class="trip-title">
+							<h3>🏔️ 京都 /大阪　• Kyoto/Osaka</h3>
+							<span class="trip-date">2019年1月 • 7日間</span>
+						</div>
+						<span class="trip-arrow">▼</span>
+					</div>
+					<div class="trip-content">
+							<div class="trip-details">
+								<div class="photo-gallery">
+									<img src="images/family/osaka1.jpg" alt="osaka1">
+									<img src="images/family/osaka2.jpg" alt="osaka2">
+									<img src="images/family/osaka3.jpg" alt="osaka3">									
+									<img src="images/family/osaka5.jpg" alt="osaka5">
+									<img src="images/family/osaka6.jpg" alt="osaka6">
+									<img src="images/family/osaka4.jpg" alt="osaka4">
+								</div> 
+							</div>
+					</div>
+
+					<div class="trip-card">
+					<div class="trip-header" onclick="toggleTrip(this)">
+						<div class="trip-title">
+							<h3>🏔️ 東京　• Tokyo</h3>
+							<span class="trip-date">2024年7月 • 7日間</span>
+						</div>
+						<span class="trip-arrow">▼</span>
+					</div>
+					<div class="trip-content">
+							<div class="trip-details">
+								<div class="photo-gallery">
+									<img src="images/family/tokyo1.jpg" alt="tokyo1">
+									<img src="images/family/tokyo2.jpg" alt="tokyo2">
+									<img src="images/family/tokyo3.jpg" alt="tokyo3">									
+									<img src="images/family/tokyo4.jpg" alt="tokyo4">
+									<img src="images/family/tokyo5.jpg" alt="tokyo5">
+									<img src="images/family/tokyo6.jpg" alt="tokyo6">
+								</div> 
+							</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		</section>
+	</main>
+
+</div>
+
+	<footer>
+		<p>&copy; 2026 ワンアジマ. All rights reserved. </p>
+	</footer>
+
+
+<script>
+    function toggleYear(header) {
+      const yearSection = header.parentElement;
+      yearSection.classList.toggle('active');
+    }
+
+    function toggleTrip(header) {
+      const tripCard = header.parentElement;
+      tripCard.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

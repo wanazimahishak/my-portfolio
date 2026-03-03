@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+    <meta charset="UTF-8">
+    <title>趣味</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+	<h1>🌟 日本でのイベント & 体験 ❣ </h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">ホーム</a></li>
+		<li><a href="food.html">好きな食べ物</a></li>
+		<li><a href="event.html">イベント参加</a></li>
+		<li><a href="travel.html">旅行</a></li>
+		<li><a href="bucket.html">やりたいこと</a></li>
+	</ul>
+</nav>
+
+<div class ="container">
+	<main>
+         <!-- decorative divider -->
+        <div class="divider">
+            <img src="images/Others/divider.jpg" alt="divider" class="divider">
+        </div>
+		
+		<p class="main-desc"> この2年間、本当にいろんな思い出ができた。
+            <br>嬉しいことも、しんどいことも、全部まとめて今の自分を成長（せいちょう）させてくれた気がする。忘れられない時間ばかり。</p>
+        
+         <div class="divider">
+            <img src="images/Others/divider.jpg" alt="divider" class="divider">
+        </div>
+
+          <!-- School Section -->
+        <div class="gallery-section">
+            <h2>🎓 国際アニメーション専門学校 ・2025-2026</h2>
+            <div class="photo-gallery">
+                <img src="images/School/class1.jpg" alt="class1">
+                <img src="images/School/class2.jpg" alt="class2">
+                <img src="images/School/class3.jpg" alt="class3">
+                <img src="images/School/class4.jpg" alt="class4">
+                <img src="images/School/class5.jpg" alt="class5">
+                <img src="images/School/class6.jpg" alt="class6">
+                <img src="images/School/class7.jpg" alt="class7">
+                <img src="images/School/class8.jpg" alt="class8">
+                <img src="images/School/class9.jpg" alt="class9">
+            </div>
+        </div>    
+
+         <!-- School Section -->
+        <div class="gallery-section">
+            <h2>🎓 愛和外語学院 ・2024-2025</h2>
+            <div class="photo-gallery">
+                <img src="images/School/aiwa1.jpg" alt="aiwa1">
+                <img src="images/School/aiwa2.jpg" alt="aiwa2">
+                <img src="images/School/aiwa4.jpg" alt="aiwa4">
+                <img src="images/School/aiwa5.jpg" alt="aiwa5">
+                <img src="images/School/aiwa6.jpg" alt="aiwa6">
+                <img src="images/School/aiwa7.jpg" alt="aiwa7">
+                <img src="images/School/aiwagrad.jpeg" alt="aiwa8">
+            </div>
+        </div>
+
+         <!-- FOSA Section -->
+        <div class="gallery-section">
+            <h2>🎓 FOSA (Fukuoka Overseas Student Association) ・2025-2026</h2>
+            <div class="photo-gallery">
+                <img src="images/event/fosa1.jpg" alt="FOSA event 1">
+                <img src="images/event/fosa2.jpg" alt="FOSA event 2">
+                <img src="images/event/fosa3.jpg" alt="FOSA event 3">
+                <img src="images/event/fosa4.jpg" alt="FOSA event 3">
+            </div>
+        </div>
+
+        <!-- Hakozaki Kouminakan Section -->
+        <section class="gallery-section">
+            <h2>東箱崎会館・子ども英語クラス・2024-2026</h2>
+            <div class="photo-gallery"> 
+                <img src="images/event/kou1.jpg" alt="Test image">
+                <img src="images/event/kou-2.jpg" alt="Test image">
+                <img src="images/event/kou-3.jpg" alt="Test image">
+            </div>
+        </section>
+
+        <!-- Fukuoka Malaysia Friendship Association Section -->
+        <section class="gallery-section">
+            <h2>Fukuoka Malaysia　Friendship Association</h2>
+            <div class="photo-gallery">
+                <img src="images/event/my-fuk.jpg" alt="Fukuoka Malaysia event 1">
+                <img src="images/event/my-fuk1.jpg.jpeg" alt="Fukuoka Malaysia event 2">
+            </div>
+        </section>
+	</main>	
+</div>
+
+<footer>
+    <p>&copy; 2026 ワンアジマ. All rights reserved. </p>
+</footer>
+
+</body>
+
+<script>
+    function showAlbum(year) {
+        document.getElementById('album-2025').style.display = 'none';
+        document.getElementById('album-2024').style.display = 'none';
+        document.getElementById('album-' + year).style.display = 'flex';
+    }
+</script>
+
+</html>
